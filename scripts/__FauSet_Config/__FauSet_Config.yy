@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__FauSet_Config",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__FauSet_Config",
+  "parent":{
+    "name":"_internal",
+    "path":"folders/FauSet/_internal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

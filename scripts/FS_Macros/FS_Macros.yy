@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FS_Macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FS_Macros",
+  "parent":{
+    "name":"_internal",
+    "path":"folders/FauSet/_internal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

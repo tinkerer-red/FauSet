@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fs_list",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fs_list",
+  "parent":{
+    "name":"FauSet",
+    "path":"folders/FauSet.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
