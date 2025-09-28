@@ -81,9 +81,9 @@ This library was shaped not just through code, but through **conversation, trial
 
 Special thanks to:
 
-* **Juju Adams**
-* **TabularElf**
-* **DragoniteSpam (Michael)**
+* [**Juju Adams**](https://github.com/JujuAdams)
+* [**TabularElf**](https://github.com/tabularelf)
+* [**DragoniteSpam (Michael)**](https://github.com/DragoniteSpam)
 
 for their insights, ideas, and willingness to bounce concepts back and forth — leading to the system you see here.
 Thanks Gamers <3
