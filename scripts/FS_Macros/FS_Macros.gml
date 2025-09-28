@@ -12,3 +12,8 @@
 	}
 
 #macro __FS_ARG_RESET array_resize(__arr, 0);
+
+enum __FS_DESTRUCTOR {
+	TTL = 0,
+	REF = 1,
+}

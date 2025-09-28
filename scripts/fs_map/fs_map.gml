@@ -181,7 +181,7 @@ function fs_map_exists(_id, _key) {
 #endregion
 function fs_map_keys_to_array(_id, _array=undefined) {
 	_id = _id.value;
-	return ds_map_keys_to_array(_id, _array=undefined)
+	return ds_map_keys_to_array(_id, _array)
 }
 #region JsDocs
 /// @func    fs_map_values_to_array()
@@ -194,7 +194,7 @@ function fs_map_keys_to_array(_id, _array=undefined) {
 #endregion
 function fs_map_values_to_array(_id, _array=undefined) {
 	_id = _id.value;
-	return ds_map_values_to_array(_id, _array=undefined)
+	return ds_map_values_to_array(_id, _array)
 }
 #region JsDocs
 /// @func    fs_map_find_value()
@@ -307,7 +307,7 @@ function fs_map_write(_id) {
 #endregion
 function fs_map_read(_id, _str, _legacy=undefined) {
 	_id = _id.value;
-	return ds_map_read(_id, _str, _legacy=undefined)
+	return ds_map_read(_id, _str, _legacy)
 }
 #region JsDocs
 /// @func    fs_map_secure_save()

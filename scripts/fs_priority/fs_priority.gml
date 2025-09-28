@@ -176,5 +176,5 @@ function fs_priority_write(_id) {
 #endregion
 function fs_priority_read(_id, _str, _legacy=undefined) {
 	_id = _id.value;
-	return ds_priority_read(_id, _str, _legacy=undefined)
+	return ds_priority_read(_id, _str, _legacy)
 }

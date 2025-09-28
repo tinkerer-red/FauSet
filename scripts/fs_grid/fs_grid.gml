@@ -526,7 +526,7 @@ function fs_grid_write(_index) {
 #endregion
 function fs_grid_read(_index, _string, _legacy=undefined) {
 	_index = _index.value;
-	return ds_grid_read(_index, _string, _legacy=undefined)
+	return ds_grid_read(_index, _string, _legacy)
 }
 #region JsDocs
 /// @func    fs_grid_sort()
@@ -551,7 +551,7 @@ function fs_grid_sort(_index, _column, _ascending) {
 function fs_grid_to_mp_grid(_src, _dest, _func=undefined) {
 	_src = _src.value;
 	_dest = _dest.value;
-	return ds_grid_to_mp_grid(_src, _dest, _func=undefined)
+	return ds_grid_to_mp_grid(_src, _dest, _func)
 }
 
 

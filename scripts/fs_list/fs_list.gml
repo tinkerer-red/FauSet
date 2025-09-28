@@ -73,7 +73,7 @@ function fs_list_add(_id) {
 	__FS_ARG_INIT
 	__arr[0] = _id.value;
 	__FS_ARG_SET
-	return script_execute(ds_list_add, __arr);
+	return script_execute_ext(ds_list_add, __arr);
 	__FS_ARG_RESET
 }
 #region JsDocs
@@ -228,7 +228,7 @@ function fs_list_write(_id) {
 #endregion
 function fs_list_read(_id, _str, _legacy=undefined) {
 	_id = _id.value;
-	return ds_list_read(_id, _str, _legacy=undefined)
+	return ds_list_read(_id, _str, _legacy)
 }
 #region JsDocs
 /// @func    fs_list_set()
@@ -243,6 +243,6 @@ function fs_list_set(_id, _pos) {
 	__arr[0] = _id.value;
 	__arr[0] = _pos;
 	__FS_ARG_SET
-	return script_execute(ds_list_set, __arr);
+	return script_execute_ext(ds_list_set, __arr);
 	__FS_ARG_RESET
 }

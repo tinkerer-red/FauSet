@@ -73,7 +73,7 @@ function fs_queue_enqueue(_id) {
 	__FS_ARG_INIT
 	__arr[0] = _id.value;
 	__FS_ARG_SET
-	return script_execute(ds_queue_enqueue, __arr);
+	return script_execute_ext(ds_queue_enqueue, __arr);
 	__FS_ARG_RESET
 }
 #region JsDocs
@@ -132,5 +132,5 @@ function fs_queue_write(_id) {
 #endregion
 function fs_queue_read(_id, _str, _legacy=undefined) {
 	_id = _id.value;
-	return ds_queue_read(_id, _str, _legacy=undefined)
+	return ds_queue_read(_id, _str, _legacy)
 }

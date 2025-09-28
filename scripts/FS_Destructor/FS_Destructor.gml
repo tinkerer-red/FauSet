@@ -24,10 +24,10 @@ function FS_Destructor(_initialValue, _destroyMethod) {
 					ds_grid_add_region(_grid, __FS_DESTRUCTOR.TTL, 0, __FS_DESTRUCTOR.TTL, _used_rows - 1, -1);
 				}
 				
-				// sort all objects by TTL descending (expired sink to the bottom half after decrement)
+				// sort all objects by TTL ascending (expired float to the top half)
 				ds_grid_sort(_grid, __FS_DESTRUCTOR.TTL, true);
 				
-				// Sweep bottom tail for expired items (TTL <= 0)
+				// Sweep top for expired items (TTL <= 0)
 				var _i = 0;
 				repeat (_used_rows) {
 					if (_grid[# __FS_DESTRUCTOR.TTL, _i]) {
@@ -73,7 +73,8 @@ function FS_Destructor(_initialValue, _destroyMethod) {
 	
 	var _obj = {}
 	with (_obj) {
-		with(weak_ref_create(_obj))
+		value = _initialValue;
+	    with(weak_ref_create(_obj))
 	    {
 	        value = _initialValue;
 	        destroy = _destroyMethod;
