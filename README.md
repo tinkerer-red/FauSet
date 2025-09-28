@@ -75,6 +75,21 @@ FauSet covers all common operations:
 
 ---
 
+## 🙏 Special Thanks
+
+This library was shaped not just through code, but through **conversation, trial, and error** with friends in the GameMaker community.
+
+Special thanks to:
+
+* **Juju Adams**
+* **TabularElf**
+* **DragoniteSpam (Michael)**
+
+for their insights, ideas, and willingness to bounce concepts back and forth — leading to the system you see here.
+Thanks Gamers <3
+
+---
+
 ## 📜 License
 
 MIT — use freely in your projects.
