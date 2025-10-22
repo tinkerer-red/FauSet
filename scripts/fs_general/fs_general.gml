@@ -5,7 +5,6 @@
 /// @return  {Undefined}
 #endregion
 function fs_set_precision(_prec) {
-	_prec = _prec.value;
 	return ds_set_precision(_prec)
 }
 #region JsDocs
