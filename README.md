@@ -18,7 +18,7 @@ Supported data structures:
 
 * **Automatic GC**: All created structures are tracked with weak references and TTL counters. When an object goes out of scope, FauSet finalizes and destroys it safely.
 * **Drop-in API**: FauSet mirrors GameMaker’s `ds_*` functions (`fs_list_add`, `fs_stack_pop`, `fs_queue_enqueue`, etc.). Just swap `ds_` for `fs_`.
-* **Safe destruction**: No more silent leaks — expired or unreferenced structures are cleaned up automatically.
+* **Safe destruction**: No more silent leaks - expired or unreferenced structures are cleaned up automatically.
 * **Fast internals**: GC tracking uses an over-sized `ds_grid` with geometric growth/shrink, so insertions and removals are constant-time without frequent resizes.
 * **Configurable**: Macros let you tune GC step rate, collection rate, and minimum grid size.
 
@@ -51,7 +51,7 @@ fs_list_add(myList, "hello", "world");
 // Check size
 var count = fs_list_size(myList);
 
-// Clear when done (optional — FauSet will GC if lost)
+// Clear when done (optional - FauSet will GC if lost)
 fs_list_destroy(myList);
 ```
 
@@ -81,15 +81,15 @@ This library was shaped not just through code, but through **conversation, trial
 
 Special thanks to:
 
-* **Juju Adams**
-* **TabularElf**
-* **DragoniteSpam (Michael)**
+* [**Juju Adams**](https://github.com/JujuAdams)
+* [**TabularElf**](https://github.com/tabularelf)
+* [**DragoniteSpam (Michael)**](https://github.com/DragoniteSpam)
 
-for their insights, ideas, and willingness to bounce concepts back and forth — leading to the system you see here.
+for their insights, ideas, and willingness to bounce concepts back and forth - leading to the system you see here.
 Thanks Gamers <3
 
 ---
 
 ## 📜 License
 
-MIT — use freely in your projects.
+MIT - use freely in your projects.
